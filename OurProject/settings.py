@@ -64,12 +64,12 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'OurProject.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://peitel-backend-ppi1.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://peitel-backend-ppi1.onrender.com', 'http://127.0.0.1:8000/',]
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "OurProject" / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
